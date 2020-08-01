@@ -9,40 +9,61 @@ and open the template in the editor.
         <title>Login Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/login_css.css">
+        <script src="js/login.js"></script>
     </head>
     <body>
-        <form method="POST" action="home.html">
-            <table>
-                <tr>
-                    <td>
-                        UserName :- 
-                    </td>
-                    <td>
-                        <input type="text" name="username">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Password :- 
-                    </td>
-                    <td>
-                        <input type="password" name="password">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">Forgot Password</a>
-                    </td>
-                    <td>
-                        <input type="button" name="submit" value="Login">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <a href="signup.html">New User? Sign In</a>
-                    </td>
-                </tr>
-            </table>
-        </form>
+
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form" id="loginForm">
+                        <span class="login100-form-title p-b-26">
+                            Welcome
+                        </span>
+                        <span class="login100-form-title p-b-48">
+                            <i class="zmdi zmdi-font"></i>
+                        </span>
+
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="username" placeholder="Username" required>
+                        </div>
+
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="password" name="pass" placeholder="Password" required>
+                        </div>
+
+                        <div class="text-center p-t-115">
+                            <span class="txt1">
+                                Forgot password?
+                            </span>
+
+                            <a class="txt2" href="#">
+                                Click Here
+                            </a>
+                        </div>
+                        
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn" >
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="text-center p-t-115">
+                            <span class="txt1">
+                                Don’t have an account?
+                            </span>
+
+                            <a class="txt2" href="signup.html">
+                                Sign Up
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
